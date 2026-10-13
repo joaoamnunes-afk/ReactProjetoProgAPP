@@ -1,0 +1,16 @@
+.card{
+
+    overflow-y: auto; /* Hide vertical scrollbar */
+    height: 200px !important;
+
+}.card::-webkit-scrollbar {
+  display: none;
+}.card-movie{
+    background-color: rgb(16, 1, 36);
+    color: white;
+    border-radius: 1px;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 4px;
+    transition-duration: 1.5s;
+}
