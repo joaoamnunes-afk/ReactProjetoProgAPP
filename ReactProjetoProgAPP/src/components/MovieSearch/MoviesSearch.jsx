@@ -34,14 +34,14 @@ function MoviesSearch (){
         return () => clearTimeout(delayDebounceFN)
     },[query])
     return(
-        <div  className='col-sm-5 card border'>
-            <h2> Nivel Médio: Consumo de API OMDB com Debounce</h2>
+        <div  className=''>
+            <h2> Nivel Médio: Consumo de API <br />OMDB com Debounce</h2>
             <p>Busca filmes assim que você para de digitar.</p>
             <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="CHICO BENTO"
+                placeholder="Busque Filmes"
             />
             {!loading && movies.length > 0 &&(
                 <ul>
