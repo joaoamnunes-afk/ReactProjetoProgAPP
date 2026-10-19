@@ -1,38 +1,13 @@
 import { useState, useEffect } from "react";
+import { useMovies } from "../../hooks/useMovies";
 import './MoviesSearch.css'
 function MoviesSearch (){
-    const api_key = 'ee22997f'
-    const [movies,setMovies] = useState([])
-    const [loading,setLoading] = useState(false)
-    const [query,setQuery] = useState('')
-    useEffect(() =>{
-        const getData = async () =>{
-                setLoading(true)
-                try{
-                    const response = await
-                    fetch(`https://www.omdbapi.com/?s=${query}&apikey=${api_key}`)
-                    const data = await response.json()
-                    if(data.Response === 'True'){
-                        setMovies(data.Search)
-                    }else{
-                        setMovies([])
-                    }
-                }catch(err){
-                    console.loading('Erro ao buscar Filmes')
-                }
-                finally{
-                    setLoading(false)
-                }               
-        }
-        const delayDebounceFN = setTimeout(() =>{
-            if(query.trim() !== ''){
-                getData()
-            }else{
-                setMovies([])
-            }
-        },800)
-        return () => clearTimeout(delayDebounceFN)
-    },[query])
+ 
+    const [query, setQuery] = useState('');
+    const API_KEY = 'ee22997f';
+
+  
+  const { movies, loading, error } = useMovies(query, API_KEY);
     return(
         <div  className=''>
             <h2> Nivel Médio: Consumo de API <br />OMDB com Debounce</h2>

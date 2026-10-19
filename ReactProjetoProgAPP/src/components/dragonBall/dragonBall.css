@@ -1,3 +1,6 @@
 .hero{
     margin: auto;
 }
+.base{
+    box-shadow: none !important;
+}
