@@ -1,6 +1,21 @@
-.hero{
-    margin: auto;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  border-style: none;
+  box-shadow: none;
 }
-.base{
-    box-shadow: none !important;
+
+.base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.base img {
+  max-width: 200px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }

@@ -1,45 +1,8 @@
-.App {
-    margin: 0 auto;
-    background-color: rgb(14, 14, 32);
-    color: white !important;
-    width: 100% !important; /* 100% evita que o layout vaze a tela */
-    min-height: 100vh;
-    overflow-x: hidden; /* Garante que nada passe das laterais */
+.lighttheme{
+    background-color: lightblue;
+    color: black;
 }
-
-.movie {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    min-height: 220px; /* Use min-height em vez de height fixo */
-}
-
-.movie div {
-    margin: 20px;
-    min-height: 230px;
-}
-
-.border {
-    border-radius: 8px !important; /* Usar px ou em para bordas fica mais consistente */
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-.m-auto {
-    margin: auto !important;
-}
-
-.shadow {
-    box-shadow: 5px 5px 15px rgb(37, 37, 88) !important;
-    text-shadow: 20px 1px 40px rgb(37, 37, 88) !important;
-}
-
-h1, h2 {
-    transition-duration: 0.1s;
-}
-
-h1:hover, h2:hover {
-    color: rgb(60, 60, 151);
-    transform: translateY(-2px);
-    transition-duration: 0.5s;
+.darktheme{
+    background-color: darkblue;
+    color: aliceblue;
 }

@@ -15,7 +15,7 @@ useEffect(() => {
   const getData = async () => { 
     try { 
     const res = await axios.get( "https://6a79e554674f43f4db11ebc8.mockapi.io/api/person" ); 
-    const pokeres = await axios.get("https://pokeapi.co/api/v2/pokemon/" + 16)
+    const pokeres = await axios.get("https://pokeapi.co/api/v2/pokemon/768/" )
     setPokeChar(pokeres.data);
     console.log("Success:", res.data); 
     setLoading(false); 
@@ -39,7 +39,7 @@ useEffect(() => {
   return (  
     <>
       <section className='d-flex justify-content-evenly'>
-          <img className='img pidgey' src={pokeChar.sprites.front_default} alt="" />
+          <img className='img' src={pokeChar.sprites.front_default} alt="" />
           <div className='p-2'>
             <h2>{pokeChar.name}</h2>
             <p>Meu pet</p>

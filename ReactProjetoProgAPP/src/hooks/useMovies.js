@@ -3,20 +3,20 @@ import { useState, useEffect } from 'react';
 export function useMovies(query, api_key) {
   const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(null)
+    const [error, setError] = useState(false)
 
   useEffect(() => {
   
     if (!query || query.trim() === '') {
       setMovies([])
       setLoading(false)
-      setError(null)
+      setError(false)
       return
     }
 
     const getData = async () => {
       setLoading(true)
-      setError(null)
+      setError(false)
       try {
         const response = await fetch(
           `https://www.omdbapi.com/?s=${query}&apikey=${api_key}`
@@ -29,8 +29,8 @@ export function useMovies(query, api_key) {
           setMovies([])
         }
       } catch (err) {
-        setError('Erro ao buscar Filmes')
-        console.error(err)
+        setError(true)
+        console.error('Erro: '+ err)
       } finally {
         setLoading(false)
       }
