@@ -4,6 +4,7 @@ import DragonBall from './components/dragonBall/dragonBall.jsx';
 import Poke from "./components/Poke/Poke.jsx"
 import Person from './components/person/person.jsx';
 import ThemeButton from './components/themeButton/themeButton.jsx';
+import  MovieFav  from './components/movieFav/movieFav.jsx';
 import trasition from "./styles/trasition.module.css"
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +19,7 @@ function App() {
        <div className=''> 
           <DragonBall />
           <Person />
+          <MovieFav />
         </div>
 
         <div className={`row w-100 justify-content-evenly`}>
