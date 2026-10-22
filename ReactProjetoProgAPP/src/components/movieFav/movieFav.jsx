@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
-
-
-import axios from 'axios'
-import {useMovieFav}  from "../../hooks/useMovieFav.js"
+import {useLink}  from "../../hooks/useLink.js"
 function movieFav() {
 
 
 
-  const [filme,loading, error] = useMovieFav("https://www.omdbapi.com/?i=tt0363988&apikey=ee22997f")
+  const [filme,loading, error] = useLink("https://www.omdbapi.com/?i=tt0363988&apikey=ee22997f")
 
 
 
