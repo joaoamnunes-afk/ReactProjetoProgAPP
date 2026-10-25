@@ -1,3 +1,4 @@
 .img{
     width: 33% !important;
+    min-width: 150px;
 }

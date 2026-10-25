@@ -10,7 +10,6 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
   
 function App() {
-  const [count, setCount] = useState(0)
   const [dark, setDark] = useState(false)
   const theme = dark? 'lighttheme':'darktheme'
   return (
@@ -22,13 +21,13 @@ function App() {
           <MovieFav />
         </div>
 
-        <div className={`row w-100 justify-content-evenly`}>
+        <div className={`row w-100 justify-content-evenly p-2`}>
 
-          <div className={`col-sm-4`}>
+          <div className={`col-md-5  col-sm-12`}>
             <MoviesSearch />
           </div> 
 
-          <div className={`col-sm-4`}> 
+          <div className={`col-md-5 col-sm-12`}> 
             <Poke />
           </div> 
 

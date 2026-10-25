@@ -1,11 +1,12 @@
-.card{
+.search{
 
     overflow-y: auto; /* Hide vertical scrollbar */
-    height: 200px !important;
+    height: auto;
+    min-width:200px;
 
-}.card::-webkit-scrollbar {
+}.search::-webkit-scrollbar {
   display: none;
-}.card-movie{
+}.search-movie{
     background-color: rgb(16, 1, 36);
     color: white;
     border-radius: 1px;
