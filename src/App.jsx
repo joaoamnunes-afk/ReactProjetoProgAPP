@@ -2,7 +2,7 @@ import { useState } from 'react'
 import MoviesSearch from './components/MovieSearch/MoviesSearch.jsx'
 import DragonBall from './components/dragonBall/dragonBall.jsx';
 import Poke from "./components/Poke/Poke.jsx"
-import Person from './components/person/person.jsx';
+import Person from './components/Person/Person.jsx';
 import ThemeButton from './components/themeButton/themeButton.jsx';
 import  MovieFav  from './components/movieFav/movieFav.jsx';
 import trasition from "./styles/trasition.module.css"
