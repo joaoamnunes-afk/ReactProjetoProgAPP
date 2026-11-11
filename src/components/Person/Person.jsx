@@ -12,7 +12,7 @@ const [person,error,loading]=  useLink("https://6a79e554674f43f4db11ebc8.mockapi
     <>
       <section>
 
-        <div style='text-align:center'>
+        <div style='text-align: center'>
             <h1>{person[10].nome} </h1>
         </div>
         
