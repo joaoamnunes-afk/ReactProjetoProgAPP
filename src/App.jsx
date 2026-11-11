@@ -27,7 +27,7 @@ function App() {
             <MoviesSearch />
           </div> 
 
-          <div className={`p-1 m-1`}> 
+          <div className={`p-1 m-1`} style='width:200px'> 
             <Poke />
           </div> 
 
