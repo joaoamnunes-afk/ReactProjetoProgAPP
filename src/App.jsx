@@ -21,13 +21,13 @@ function App() {
           <MovieFav />
         </div>
 
-        <div className={`row w-100 justify-content-evenly p-2`}>
+        <div className={`d-flex flex-column`}>
 
-          <div className={`col-md-12  col-sm-12`}>
+          <div className={`p-1 m-1`}>
             <MoviesSearch />
           </div> 
 
-          <div className={`col-md-12 col-sm-12`}> 
+          <div className={`p-1 m-1`}> 
             <Poke />
           </div> 
 
