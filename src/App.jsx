@@ -23,7 +23,7 @@ function App() {
         <div className={'container'}>
           <div className={`row`}>
   
-            <div className={`col-sm-6 h-100`}>
+            <div className={`col-sm-6 h-100`} style={{height:'200px'}}>
               <MoviesSearch />
             </div> 
   
