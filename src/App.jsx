@@ -23,11 +23,11 @@ function App() {
         <div className={'container'}>
           <div className={`row`}>
   
-            <div className={`col-sm-6 w-100`}>
+            <div className={`col-sm-6 h-100`}>
               <MoviesSearch />
             </div> 
   
-            <div className={`col-sm-6 w-100`} > 
+            <div className={`col-sm-6 h-100`} > 
               <Poke />
             </div> 
         </div>
