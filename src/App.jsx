@@ -27,7 +27,7 @@ function App() {
               <MoviesSearch />
             </div> 
   
-            <div className={`col-sm-6 h-100`} style={{height:'200px'}} > 
+            <div className={`col-sm-6 h-100`}  > 
               <Poke />
             </div> 
         </div>
