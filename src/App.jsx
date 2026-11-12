@@ -20,17 +20,17 @@ function App() {
           <Person />
           <MovieFav />
         </div>
-
-        <div className={`cartaoMovies`}>
-
-          <div className={``}>
-            <MoviesSearch />
-          </div> 
-
-          <div className={``} > 
-            <Poke />
-          </div> 
-
+        <div className={'container'}>
+          <div className={`row`}>
+  
+            <div className={`col-sm-6`}>
+              <MoviesSearch />
+            </div> 
+  
+            <div className={`col-sm-6`} > 
+              <Poke />
+            </div> 
+        </div>
         </div>
         <div style={{width:'100%',height:'200px'}}></div>
 
