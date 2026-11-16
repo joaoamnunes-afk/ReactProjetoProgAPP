@@ -9,7 +9,7 @@ function MoviesSearch (){
   
   const { movies, loading, error } = useMovies(query, API_KEY);
     return(
-        <div  className='search card p-2 m-1'>
+        <div  className='search card p-2 m-1' style={{height:'200px'}}>
             <h2> Nivel Médio: Consumo de API <br />OMDB com Debounce</h2>
             <p>Busca filmes assim que você para de digitar.</p>
             <input

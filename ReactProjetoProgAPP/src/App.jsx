@@ -5,6 +5,7 @@ import Poke from "./components/Poke/Poke.jsx"
 import Person from './components/person/person.jsx';
 import ThemeButton from './components/themeButton/themeButton.jsx';
 import  MovieFav  from './components/movieFav/movieFav.jsx';
+import PokeRandom from './components/PokeRandom/PokeRandom.jsx';
 import trasition from "./styles/trasition.module.css"
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,9 +16,13 @@ function App() {
   return (
     
       <section className={`d-flex flex-column align-items-center w-100 ${theme} ${trasition.trasitionSlow}`}> 
-       <div className=''> 
-          <DragonBall />
+      <div style={{position:'absolute',left:'0px'}}>  <ThemeButton className={`${trasition.trasitionSlow}`} dark={dark}
+              onToggle={()=> setDark(!dark)}
+          /> </div>
+       <div className='d-flex flex-row p-2'style={{marginTop:'50PX'}}> 
+        <div className='align-self-center m-5'> <DragonBall />
           <Person />
+        </div>
           <MovieFav />
         </div>
 
@@ -27,16 +32,15 @@ function App() {
             <MoviesSearch />
           </div> 
 
-          <div className={`col-md-5 col-sm-12`}> 
+          <div className={`col-md-5 col-sm-12 h-100`}> 
             <Poke />
           </div> 
-
+          
+          <div className={`col-md-5 col-sm-12 `}><PokeRandom /></div>
         </div>
+        
+          
         <div style={{width:'100%',height:'200px'}}></div>
-
-          <ThemeButton className={`${trasition.trasitionSlow}`} dark={dark}
-              onToggle={()=> setDark(!dark)}
-          />
 
       </section>
       

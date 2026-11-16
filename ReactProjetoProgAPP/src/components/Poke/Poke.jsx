@@ -8,7 +8,7 @@ function Poke() {
 
  
   const [pokeChar,loading,error] = useLink("https://pokeapi.co/api/v2/pokemon/768/")
-useLink
+
 
 
 
@@ -18,7 +18,7 @@ useLink
   
   return (  
     <>
-      <section className='d-flex flex-row justify-content-evenly m-1 card'>
+      <section className='d-flex flex-row justify-content-evenly card' style={{height:'200px'}}>
           <img className='img' src={pokeChar.sprites.front_default} alt="" />
           <div className='p-2 d-flex flex-column '>
             <h2>{pokeChar.name}</h2>
