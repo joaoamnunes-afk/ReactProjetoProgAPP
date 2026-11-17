@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {useLink}  from "../../hooks/useLink.js"
-function movieFav() {
+function MovieFav() {
 
 
 
@@ -15,7 +15,7 @@ function movieFav() {
       <div>
 
       
-          <img src={filme.Poster} alt="" />
+          <img style={{maxWidth:'100%'}} src={filme.Poster} alt="" />
           <h2>{filme.Title}</h2>
           <p>Meu filme favorito</p>
           <p>{filme.Ratings[0].Source}: {filme.Ratings[0].Value}</p>
@@ -26,4 +26,4 @@ function movieFav() {
   )
 }
 
-export default movieFav
+export default MovieFav

@@ -20,14 +20,14 @@ function PokeRandom() {
     }
 
     return (
-        <div className="card p-2 bg-dark m-1" style={{background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"}}>
+        <div  >
            
-            <button style={{backgroundColor:'white',borderRadius:'5px',height:'30px'}} onClick={() => setRandomPoke(gerarNumeroAleatorio())}>
+            <button onClick={() => setRandomPoke(gerarNumeroAleatorio())}>
                Gere Um Pokemon Aleatório
             </button>
             
             
-            <p className="text-white">{poke.name}</p>
+            <p >{poke.name}</p>
             <img src={poke.sprites.front_default} alt="" />
         </div>
     );

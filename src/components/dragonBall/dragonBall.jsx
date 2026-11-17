@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import './dragonBall'
+import './dragonBall.css'
 import { useLink } from '../../hooks/useLink'
-function App() {
+function DragonBall() {
 
   const [DBchar,error,loading ] = useLink("https://dragonball-api.com/api/characters/5") 
 
@@ -29,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default DragonBall
