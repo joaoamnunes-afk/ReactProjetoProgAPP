@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import {useLink}  from "../../hooks/useLink.js"
+
+import {useLink}  from "../hooks/useLink.js"
 function MovieFav() {
 
 

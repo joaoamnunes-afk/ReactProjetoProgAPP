@@ -1,14 +1,14 @@
-import DragonBall from '../components/DragonBall/DragonBall.jsx'
-import NavigateButton from '../components/navigateButton/NavigateButton.jsx';
-import Person from '../components/Person/Person.jsx'
-import themeButton from '../components/themeButton/themeButton.jsx'
+import DragonBall from '../components/dragonBall.jsx'
+import NavigateButton from '../components/NavigateButton.jsx';
+import Person from '../components/Person.jsx'
+import ThemeButton from '../components/themeButton.jsx'
 import { Link } from "react-router-dom";
 function DBZ(){
     return(
         <>
            <DragonBall />
            <Person />
-           <themeButton />
+           <ThemeButton />
            <div>
                 <NavigateButton path='/pokemon' nome='Pokemon' />
                 <br />

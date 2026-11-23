@@ -1,7 +1,4 @@
-import { useEffect, useState } from 'react'
-import './Poke.css'
-import axios from 'axios'
-import { useLink } from '../../hooks/useLink';
+import { useLink } from '../hooks/useLink';
 function Poke() {
 
 

@@ -1,7 +1,7 @@
-import MovieFav from "../components/MovieFav/MovieFav";
-import MoviesSearch from "../components/MovieSearch/MoviesSearch";
-import ThemeButton from "../components/themeButton/themeButton";
-import NavigateButton from "../components/navigateButton/NavigateButton";
+import MovieFav from "../components/movieFav";
+import MoviesSearch from "../components/MoviesSearch";
+import ThemeButton from "../components/themeButton";
+import NavigateButton from "../components/NavigateButton";
 import { Link } from "react-router-dom";
 function Filmes(){
     return(

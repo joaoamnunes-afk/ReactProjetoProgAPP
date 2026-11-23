@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { useMovies } from "../../hooks/useMovies";
-import './MoviesSearch.css'
+import { useMovies } from "../hooks/useMovies";
 function MoviesSearch (){
  
     const [query, setQuery] = useState('');

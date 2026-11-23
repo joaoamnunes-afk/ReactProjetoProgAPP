@@ -1,9 +1,20 @@
-.lighttheme{
-    background-color: rgb(196, 205, 253);
-    color: black;
-}
-.darktheme{
-    background-color: rgb(0, 0, 29);
-    color: white;
-}
+/* aqui é pra tentar deixar apenas estilização ampla, tipo cor de fundo,
+ tema e posição ampla, e deixar o posicionamento complexo e coisas mais epecificas para o css 
+ das paginas
+ */
 
+.Dark{
+    background-color: rgb(16, 3, 61);
+    color: rgb(203, 203, 218);
+    transition-duration: 0.5s;
+}.Light{
+    background-color: rgb(173, 213, 250);
+    transition-duration: 0.5s;
+    color:rgb(16, 3, 61) ;
+}.center{
+    justify-self: center;
+    
+}body{
+    font-family: sans-serif;
+    transition-duration: 0.5s;
+}

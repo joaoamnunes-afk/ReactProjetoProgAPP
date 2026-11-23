@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLink } from "../../hooks/useLink";
+import { useLink } from "../hooks/useLink";
 
 
 const gerarNumeroAleatorio = () => Math.floor(Math.random() * 1024) + 1;
