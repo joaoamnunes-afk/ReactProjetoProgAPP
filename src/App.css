@@ -4,17 +4,58 @@
  */
 
 .Dark{
-    background-color: rgb(16, 3, 61);
+    background-color: rgb(48, 55, 148);
+    --background-color: rgb(48, 55, 148);
     color: rgb(203, 203, 218);
     transition-duration: 0.5s;
+    --box-shadow: 0px 1px 5px rgb(20, 28, 54);
 }.Light{
-    background-color: rgb(173, 213, 250);
+    background-color: rgb(128, 181, 241);
+    --background-color: rgb(128, 181, 241);
     transition-duration: 0.5s;
     color:rgb(16, 3, 61) ;
+   --box-shadow: 0px 1px 5px rgb(105, 137, 245);
 }.center{
-    justify-self: center;
+    justify-self: center ;
+    
     
 }body{
     font-family: sans-serif;
     transition-duration: 0.5s;
+    height: 100vh !important;
+
+}body a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    transition-duration: 0.5s;
+}body a:hover{
+    font-size: larger;
+}
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: 3px;
+    padding: 10px;
+}.theme-button{
+   border: none;
+   background-color: black;
+   width: 40px;
+   height: 20px;
+   padding: 1px;
+   
+   border-radius: 8px;
+}.theme-button .toggle-button{
+    background-color: rgb(15, 15, 15);
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    transition-duration: 1s;
+    margin-bottom: 5px;
+    
+}
+.active .toggle-button{
+    transform: translateX(20px);
+    transition-duration: 1s;
 }

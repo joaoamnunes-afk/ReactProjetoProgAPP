@@ -6,7 +6,7 @@ const gerarNumeroAleatorio = () => Math.floor(Math.random() * 1024) + 1;
 
 function PokeRandom() {
    
-    const [randomPoke, setRandomPoke] = useState(gerarNumeroAleatorio);
+    const [randomPoke, setRandomPoke] = useState(1);
 
    
     const [poke, loading, error] = useLink(`https://pokeapi.co/api/v2/pokemon/${randomPoke}/`);

@@ -1,11 +1,12 @@
-import  "./themeButton"
+
 function themeButton({dark,onToggle}){
     return(
-        <button
-            className="theme-button"
+        <button 
+            className={`theme-button ${dark? 'active':''}`}
             onClick={onToggle}
         >
-         {dark? 'tema claro':'tema escuro'}
+         
+         <span className="toggle-button">{dark?'🌙':'☀️'} </span>
         </button>
     )
 }

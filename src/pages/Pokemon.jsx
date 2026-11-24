@@ -9,34 +9,34 @@ import '../App.css'
 function Pokemon() {
 
     const [dark, setDark] = useState(false)
-
-    function SetarDark() {
-        setDark(!dark)
-    }
-
+    //dark theme, from App.css.
+   
     return (
-      <div className={`${dark ? "Dark" : "Light"} `}>
-        <section className="center"> <Poke />
+      <div id="Pokemon" className={`${dark ? "Dark" : "Light"} `}>
+            <nav className="Links"> 
+                
+    
+                    <NavigateButton path="/" nome="DragonBall" />
+                    <br />
+                    <NavigateButton path="/filmes" nome="FILMES" />
+            </nav>
 
-            <PokeRandom />
+            <section className="center"> 
+                <div className="card-Pokemon card">    
+                    <Poke />
 
-            <ThemeButton
-                dark={dark}
-                onToggle={SetarDark}
-            />
-
-            <div>
-                <NavigateButton path="/" nome="DragonBall" />
-                <br />
-                <NavigateButton path="/filmes" nome="FILMES" />
-            </div>
-        </section>
-        <br /><br />
-           <footer>
-            <p className="center">Hi im the page's Footer</p>
-           </footer>
-
-        </div>
+                    <PokeRandom />
+                    
+                </div>
+            </section>
+            <aside className="aside"><ThemeButton 
+                        dark={dark}
+                        onToggle={() =>{setDark(!dark)}}
+                    /></aside>
+            <footer className="">
+                
+            </footer>
+     </div>
     )
 }
 

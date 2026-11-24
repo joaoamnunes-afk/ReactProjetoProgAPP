@@ -8,7 +8,7 @@ function MoviesSearch (){
   
   const { movies, loading, error } = useMovies(query, API_KEY);
     return(
-        <div  className='search card p-2 m-1' style={{height:'200px'}}>
+        <div  >
             <h2> Nivel Médio: Consumo de API <br />OMDB com Debounce</h2>
             <p>Busca filmes assim que você para de digitar.</p>
             <input
@@ -18,9 +18,10 @@ function MoviesSearch (){
                 placeholder="Busque Filmes"
             />
             {!loading && movies.length > 0 &&(
-                <ul>
+                <ul id="MoviesSearchId">
                     {movies.map((movie) => (
-                        <li className="search-movie" key={movie.imdbID}>
+                        <li  key={movie.imdbID}>
+                            <img src={movie.Poster} alt="" />
                             <strong>{movie.Title}</strong>({movie.Year})
                         </li>
                     ))}

@@ -1,0 +1,9 @@
+#Pokemon{
+    height: 100vh;
+    width: 100vw;
+    
+}.card-Pokemon{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
